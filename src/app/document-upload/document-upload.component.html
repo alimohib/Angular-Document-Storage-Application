@@ -1,0 +1,18 @@
+<div class="upload-container">
+    <div class="upload-card">
+      <div class="card-header">
+        <h2>Upload a New Document</h2>
+      </div>
+      <div class="card-body">
+        <form (submit)="uploadDocument($event)">
+          <div class="form-group">
+            <label for="file">Choose File:</label>
+            <input type="file" id="file" accept=".pdf,.doc,.docx" required (change)="onFileChange($event)">
+            <div class="error-message" *ngIf="fileError">{{ fileError }}</div>
+          </div>
+          <button type="submit" class="upload-button">Upload</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    

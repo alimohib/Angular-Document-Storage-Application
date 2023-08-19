@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    /* Adjustments for mobile devices */
+    .dashboard-container {
+      padding: 10px;
+    }
+  
+    .upload-container {
+      padding: 10px;
+  
+      form {
+        label,
+        input[type="file"] {
+          margin-bottom: 5px;
+        }
+  
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  

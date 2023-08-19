@@ -1,0 +1,23 @@
+<div class="dashboard-container">
+    <div class="dashboard-card">
+      <div class="card-header">
+        <h2>Your Documents</h2>
+      </div>
+      <div class="card-body">
+        <ng-container *ngIf="documents.length > 0; else noDocuments">
+          <ul class="document-list">
+            <li *ngFor="let document of documents" class="document-item">
+              <a [routerLink]="['/document', document.id]" class="document-link">{{ document.name }}</a>
+            </li>
+          </ul>
+        </ng-container>
+        <ng-template #noDocuments>
+          <p class="no-documents-message">No documents available.</p>
+        </ng-template>
+      </div>
+      <div class="card-footer">
+        <button class="back-button" (click)="goBackToUpload()">Back to Upload Document</button>
+      </div>
+    </div>
+  </div>
+  

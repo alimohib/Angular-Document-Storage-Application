@@ -1,0 +1,15 @@
+<div class="document-details">
+    <div class="document-card">
+      <div class="card-header">
+        <h3 class="card-title">{{ document?.name }}</h3>
+      </div>
+      <div class="card-body">
+        <p><strong>Type:</strong> {{ document?.type }}</p>
+        <p><strong>Size:</strong> {{ document?.size }}</p>
+      </div>
+      <div class="card-footer">
+        <button class="back-button" (click)="goBackToDashboard()">Back to Dashboard</button>
+      </div>
+    </div>
+  </div>
+  

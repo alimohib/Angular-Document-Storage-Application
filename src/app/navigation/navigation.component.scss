@@ -1,0 +1,62 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; 
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+  
+    .nav-list {
+      list-style: none;
+      display: flex;
+      margin-right: auto;
+  
+      .nav-item {
+        margin-right: 20px;
+        font-size: 16px;
+        transition: opacity 0.3s ease;
+  
+        a {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: yellow;
+          }
+        }
+  
+        &.active {
+          a {
+            color: yellow;
+          }
+        }
+      }
+    }
+  
+    .logout-button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-right:25px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: yellow;
+      }
+    }
+  }
+  
